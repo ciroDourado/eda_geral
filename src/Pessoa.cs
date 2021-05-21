@@ -2,7 +2,8 @@ using System;
 using System.Collections.Generic;
 
 public class Pessoa {
-	private string _localizacao = string.Empty;
+
+//	private string _localizacao = string.Empty;
 	public  string Nome  { get; set; }
 	public  int    Idade { get; set; }
 
