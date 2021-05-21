@@ -1,10 +1,12 @@
 public class Pessoa {
 	private string _localizacao = string.Empty;
-	public string nome;
-	public string Nome  { get; set; }
-	public int    Idade { get; set; }
+	public  string Nome  { get; set; }
+	public  int    Idade { get; set; }
 
-	public Pessoa() => Nome = "---";
+	public Pessoa() {
+		Nome  = string.Empty;
+		Idade = 0;
+	} // Pessoa
 
 	public Pessoa(string nome, int idade) {
 		Nome  = nome;

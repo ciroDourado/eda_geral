@@ -1,59 +1,37 @@
 using System;
 using System.Collections.Generic;
 
-public class Aluno {
-	private string nome;
-	private string nota;
+public class Aluno: Pessoa {
+	public string Nota { get; set; }
 
 	public Aluno() {
-		nome = string.Empty;
-		nota = string.Empty;
+		Nome = string.Empty;
+		Nota = string.Empty;
 	} // construtor
 
 	public Aluno(string nome, string nota) {
-		SetNome(nome);
-		SetNota(nota);
+		Nome = nome;
+		Nota = nota;
 	} // construtor
-	
-
-	// Get e Set Nota
-	public string GetNota() {
-		return nota;
-	} // GetNota
-
-	public void SetNota(string nota) {
-		this.nota = nota;
-	} // SetNota
-	
-
-	// Get e Set Nome
-	public string GetNome() {
-		return nome;
-	} // GetNome
-
-	public void SetNome(string nome) {
-		this.nome = nome;
-	} // SetNome
 
 
 	// Metodos
 	public string IniciaisNome() {
-		return String.IsNullOrEmpty(nome)? 
+		return String.IsNullOrEmpty(Nome)? 
 			string.Empty:
-			_IniciaisNome();
+			_Iniciais(Nome);
 	} // IniciaisNome
 
 	
-	private string _IniciaisNome() {
-		var nomes    = nome.Split(' ');
+	private string _Iniciais(string nomeCompleto) {
 		var iniciais = new Queue<char>();
 
-		foreach(string nome in nomes) {
+		foreach(string nome in nomeCompleto.Split(' ')) {
 			var inicial = _ObterInicial(nome);
 			iniciais.Enqueue(inicial);
 		}
 		return _IniciaisFormatadas(iniciais);
-	} // _IniciaisNome
+	} // _Iniciais
 
 
 	private char _ObterInicial(string nome) {
