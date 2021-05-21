@@ -19,9 +19,10 @@ public class Pessoa {
 
     // Metodos
     public string IniciaisNome() {
-        return String.IsNullOrEmpty(Nome)?
+        string nomeCompleto = Nome;
+		return String.IsNullOrEmpty(nomeCompleto)?
             string.Empty:
-            _Iniciais(Nome);
+            _Iniciais(nomeCompleto);
     } // IniciaisNome
 
 
