@@ -51,6 +51,9 @@ class Program {
 
 		nota = $"{primeiro}{ultimo}nasceu em {ano}";
 		Console.WriteLine(String.Format("Nota: {0}", nota));
+
+		Aluno ciro = new Aluno("Ciro Dourado", "10");
+		Console.WriteLine(ciro.IniciaisNome());
 	} // end Main
 
 } // end class Program
