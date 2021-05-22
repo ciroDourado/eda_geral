@@ -19,6 +19,8 @@ class Program {
 		fulano.InserirNota(9);
 		fulano.InserirNota(6); // mostra mensagem de erro
 
+		Debug.Assert(fulano.Media() == 7); // ok
+
 	} // end Main
 
 } // end class Program
