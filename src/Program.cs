@@ -17,8 +17,8 @@ class Program {
 		fulano.InserirNota(5);
 		fulano.InserirNota(7);
 		fulano.InserirNota(9);
-	
-		
+		fulano.InserirNota(6); // mostra mensagem de erro
+
 	} // end Main
 
 } // end class Program
