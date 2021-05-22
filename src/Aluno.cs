@@ -12,6 +12,7 @@ public class Aluno: Pessoa {
 	} // construtor
 
 	public Aluno(string descricao) {
+		notas     = new List<float>();
 		Descricao = descricao;
 	} // construtor
 
@@ -20,6 +21,7 @@ public class Aluno: Pessoa {
 		Nome = nome;
 		
 		// classe Aluno
+		notas     = new List<float>();
 		Descricao = descricao;
 	} // construtor
 
@@ -29,6 +31,7 @@ public class Aluno: Pessoa {
 		Idade = idade;
 		
 		// classe Aluno
+		notas     = new List<float>();
 		Descricao = descricao;
 	} // construtor
 
