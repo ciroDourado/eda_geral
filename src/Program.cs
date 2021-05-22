@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 
 class Program {
 	
@@ -17,6 +18,7 @@ class Program {
 		fulano.InserirNota(7);
 		fulano.InserirNota(9);
 	
+		
 	} // end Main
 
 } // end class Program
