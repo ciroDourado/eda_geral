@@ -39,7 +39,7 @@ public class Aluno: Pessoa {
 	public void InserirNota(float nota) {
 		var erro = "Todas as notas foram preenchidas";
 		
-		if( notas.Count <= 3 ) {
+		if( notas.Count < 3 ) {
 			notas.Add(nota);
 		} else Console.WriteLine(erro);
 	} // InserirNota
